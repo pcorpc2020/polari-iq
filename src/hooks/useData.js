@@ -19,7 +19,7 @@ const q = async (view, opts = {}) => {
   let query = supabase.from(view).select('*')
   if (opts.order)  query = query.order(opts.order, { ascending: opts.asc ?? false })
   if (opts.limit)  query = query.limit(opts.limit)
-  if (opts.single) query = query.limit(1).single()
+  if (opts.single) query = query.limit(1).maybeSingle()
   const { data, error } = await query
   if (error) throw error
   return data
