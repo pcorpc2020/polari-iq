@@ -6,6 +6,7 @@ import Hofstede from './pages/Hofstede.jsx'
 import Assessments from './pages/Assessments.jsx'
 import Relationships from './pages/Relationships.jsx'
 import Communications from './pages/Communications.jsx'
+import Routing from './pages/Routing.jsx'
 import Signals from './pages/Signals.jsx'
 import Opportunities from './pages/Opportunities.jsx'
 import MiniQueue from './pages/MiniQueue.jsx'
@@ -22,6 +23,7 @@ const NAV = [
   { id: 'assess',  label: 'Assessments',   icon: '◑', desc: 'Fit scores' },
   { id: 'rels',    label: 'Relationships', icon: '⚭', desc: '360 tether' },
   { id: 'comms',   label: 'Communications',icon: '✉', desc: 'Outreach log' },
+  { id: 'route',   label: 'Model Routing', icon: '⇄', desc: 'Emulator' },
   { id: 'signals', label: 'Signals',         icon: '⚡', desc: 'Intelligence signals' },
   { id: 'opp',     label: 'Opportunities',   icon: '◈', desc: 'Impact + heatmap' },
   { id: 'mini',    label: 'Mini Queue',      icon: '▷', desc: 'Actions + triage' },
@@ -30,7 +32,7 @@ const NAV = [
   { id: 'release', label: 'Release',         icon: '🚀', desc: 'Readiness gate' },
 ]
 
-const PAGES = { home: Home, cohesive: CohesiveFit, bench: Benchmark, hof: Hofstede, assess: Assessments, rels: Relationships, comms: Communications, cohesive: CohesiveFit, signals: Signals, opp: Opportunities, mini: MiniQueue, learn: Learning, inbox: ContentInbox, release: Release }
+const PAGES = { home: Home, cohesive: CohesiveFit, bench: Benchmark, hof: Hofstede, assess: Assessments, rels: Relationships, comms: Communications, route: Routing, cohesive: CohesiveFit, signals: Signals, opp: Opportunities, mini: MiniQueue, learn: Learning, inbox: ContentInbox, release: Release }
 
 export default function App() {
   const [page, setPage] = useState('home')
