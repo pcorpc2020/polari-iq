@@ -3,6 +3,7 @@ import Home from './pages/Home.jsx'
 import CohesiveFit from './pages/CohesiveFit.jsx'
 import Benchmark from './pages/Benchmark.jsx'
 import Hofstede from './pages/Hofstede.jsx'
+import Assessments from './pages/Assessments.jsx'
 import Signals from './pages/Signals.jsx'
 import Opportunities from './pages/Opportunities.jsx'
 import MiniQueue from './pages/MiniQueue.jsx'
@@ -16,6 +17,7 @@ const NAV = [
   { id: 'cohesive',label: 'Cohesive Fit',  icon: '◈', desc: 'Unified metric' },
   { id: 'bench',   label: 'Benchmark',     icon: '◎', desc: 'Gap analysis' },
   { id: 'hof',     label: 'Cultural Fit',  icon: '❖', desc: 'Hofstede' },
+  { id: 'assess',  label: 'Assessments',   icon: '◑', desc: 'Fit scores' },
   { id: 'signals', label: 'Signals',         icon: '⚡', desc: 'Intelligence signals' },
   { id: 'opp',     label: 'Opportunities',   icon: '◈', desc: 'Impact + heatmap' },
   { id: 'mini',    label: 'Mini Queue',      icon: '▷', desc: 'Actions + triage' },
@@ -24,7 +26,7 @@ const NAV = [
   { id: 'release', label: 'Release',         icon: '🚀', desc: 'Readiness gate' },
 ]
 
-const PAGES = { home: Home, cohesive: CohesiveFit, bench: Benchmark, hof: Hofstede, cohesive: CohesiveFit, signals: Signals, opp: Opportunities, mini: MiniQueue, learn: Learning, inbox: ContentInbox, release: Release }
+const PAGES = { home: Home, cohesive: CohesiveFit, bench: Benchmark, hof: Hofstede, assess: Assessments, cohesive: CohesiveFit, signals: Signals, opp: Opportunities, mini: MiniQueue, learn: Learning, inbox: ContentInbox, release: Release }
 
 export default function App() {
   const [page, setPage] = useState('home')
