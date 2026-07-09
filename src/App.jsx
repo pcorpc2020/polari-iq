@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Home from './pages/Home.jsx'
 import CohesiveFit from './pages/CohesiveFit.jsx'
+import Benchmark from './pages/Benchmark.jsx'
 import Signals from './pages/Signals.jsx'
 import Opportunities from './pages/Opportunities.jsx'
 import MiniQueue from './pages/MiniQueue.jsx'
@@ -12,6 +13,7 @@ import { isLive } from './lib/supabase.js'
 const NAV = [
   { id: 'home',    label: 'Command Center',  icon: '◎', desc: 'V1.5 Home' },
   { id: 'cohesive',label: 'Cohesive Fit',  icon: '◈', desc: 'Unified metric' },
+  { id: 'bench',   label: 'Benchmark',     icon: '◎', desc: 'Gap analysis' },
   { id: 'signals', label: 'Signals',         icon: '⚡', desc: 'Intelligence signals' },
   { id: 'opp',     label: 'Opportunities',   icon: '◈', desc: 'Impact + heatmap' },
   { id: 'mini',    label: 'Mini Queue',      icon: '▷', desc: 'Actions + triage' },
@@ -20,7 +22,7 @@ const NAV = [
   { id: 'release', label: 'Release',         icon: '🚀', desc: 'Readiness gate' },
 ]
 
-const PAGES = { home: Home, cohesive: CohesiveFit, cohesive: CohesiveFit, signals: Signals, opp: Opportunities, mini: MiniQueue, learn: Learning, inbox: ContentInbox, release: Release }
+const PAGES = { home: Home, cohesive: CohesiveFit, bench: Benchmark, cohesive: CohesiveFit, signals: Signals, opp: Opportunities, mini: MiniQueue, learn: Learning, inbox: ContentInbox, release: Release }
 
 export default function App() {
   const [page, setPage] = useState('home')
