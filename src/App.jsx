@@ -12,6 +12,7 @@ import RouterLearning from './pages/RouterLearning.jsx'
 import Agents from './pages/Agents.jsx'
 import Rating from './pages/Rating.jsx'
 import Runs from './pages/Runs.jsx'
+import QuickFn from './pages/QuickFn.jsx'
 import Signals from './pages/Signals.jsx'
 import Opportunities from './pages/Opportunities.jsx'
 import MiniQueue from './pages/MiniQueue.jsx'
@@ -32,6 +33,7 @@ const NAV = [
   { id: 'rlearn',  label: 'Router Learning',icon: '↻', desc: 'Self-tuning' },
   { id: 'agents',  label: 'Multi-Agent',   icon: '⚛', desc: 'Parallel collab' },
   { id: 'rating',  label: 'Human Rating',  icon: '★', desc: 'Trust 1.00' },
+  { id: 'qfn',     label: 'Quick Functions', icon: '⚡', desc: 'Less coding' },
   { id: 'runs',    label: 'Agent Runs',    icon: '▶', desc: 'Waves & grading' },
   { id: 'rating',  label: 'Human Rating',  icon: '★', desc: 'Trust 1.00' },
   { id: 'signals', label: 'Signals',         icon: '⚡', desc: 'Intelligence signals' },
@@ -43,7 +45,7 @@ const NAV = [
   { id: 'release', label: 'Release',         icon: '🚀', desc: 'Readiness gate' },
 ]
 
-const PAGES = { home: Home, cohesive: CohesiveFit, bench: Benchmark, hof: Hofstede, assess: Assessments, rels: Relationships, comms: Communications, route: Routing, loop: Loop, rlearn: RouterLearning, agents: Agents, rating: Rating, runs: Runs, rating: Rating, rating: Rating, cohesive: CohesiveFit, signals: Signals, opp: Opportunities, mini: MiniQueue, learn: Learning, inbox: ContentInbox, release: Release }
+const PAGES = { home: Home, cohesive: CohesiveFit, bench: Benchmark, hof: Hofstede, assess: Assessments, rels: Relationships, comms: Communications, route: Routing, loop: Loop, rlearn: RouterLearning, agents: Agents, rating: Rating, runs: Runs, qfn: QuickFn, rating: Rating, rating: Rating, cohesive: CohesiveFit, signals: Signals, opp: Opportunities, mini: MiniQueue, learn: Learning, inbox: ContentInbox, release: Release }
 
 export default function App() {
   const [page, setPage] = useState('home')
