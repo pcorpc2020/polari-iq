@@ -1,4 +1,3 @@
-cat > src/pages/CohesiveFit.jsx << 'FITEOF'
 import { useState } from 'react'
 import { useQ } from '../hooks/useData.js'
 import { supabase } from '../lib/supabase.js'
@@ -86,4 +85,3 @@ export default function CohesiveFit() {
     </div>
   )
 }
-FITEOF
